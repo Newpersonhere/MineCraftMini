@@ -15,7 +15,7 @@ public class MCFPSTimer extends MCTimer{
 	public void frame(){
 		if (getTime() - curTime() > 1000) {
 			lastFps = fps;
-			fps = 0;
+			fps = 60;
 			time += 1000;
 		}
 		fps++;
